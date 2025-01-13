@@ -60,6 +60,7 @@ Here we provide you a starter code to make your life easier. All you need to do 
 - Creating the camera projection transformation matrix and passing it to the vertex shader (`_init_projection_transform` method in `height_map.py`).
 - Passing the modelview transformation matrix from height map object to the vertex shader (`_update_modelview_transform` in `height_map.py`).
 - The main loop of GLFW (`_main_loop` method in `height_map.py`).
+- The vertex shader.
 
 We highly recommend checking all the code before starting your implementation. After finish your implementation, your program should look like the teaser above.
 
