@@ -334,16 +334,6 @@ class RegistrationViewerApp(Viewer):
         self.transformations[self.cur_index] = tr * self.transformations[self.cur_index]
     
     def subsample(self, pts):
-        subsample_radius = self.average_vertex_distance * 8
-        sampled = []
-        indices = list(range(len(pts)))
-        np.random.shuffle(indices)
-        for i in indices:
-            if not sampled or all(np.linalg.norm(pts[i] - pts[j]) >= subsample_radius for j in sampled):
-                sampled.append(i)
-        return sampled
-    
-    def subsample(self, pts):
         """
         Task 1: Sample points uniformly on the source mesh.
         Goal: Average distance between sampled points should be ~subsample_radius.
