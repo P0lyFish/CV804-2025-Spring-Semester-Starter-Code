@@ -7,3 +7,5 @@
 [Assignment #4](./assignment4/)
 
 [Assignment #5](./assignment5/)
+
+[Assignment #6](./assignment6/)
